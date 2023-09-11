@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <h1>My Blog</h1>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+
+        <div class="icon">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="slide-container" id="home">
+
+        <div class="slide">
+            <img src="images/img1.png" alt="">
+        
+        </div>
+
+        <div class="slide">
+            <img src="images/img2.jpg" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="images/img3.png" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="images/img4.jpg" alt="">
+        </div>
+
+        <span class="arrow prev" onclick="move(-1)">&#10094</span>
+        <span class="arrow next" onclick="move(1)">&#10095</span>
+
+    </div>
+
+    <div class="blog-container" id="blog">
+
+        <div class="blog-heading">
+            <h1>Our Blogs</h1>
+        </div>
+
+        <div class="blogs">
+
+            <div class="blog">
+                <img src="images/html.png" alt="">
+                <h3>Html Blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem totam magnam sapiente ad temporibus.</p>
+                <button onclick="htmlblog()">Read More</button>
+            </div>
+
+            <div class="blog">
+                <img src="images/css1.png" alt="">
+                <h3>Css Blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem totam magnam sapiente ad temporibus.</p>
+                <button onclick="cssblog()">Read More</button>
+            </div>
+
+            <div class="blog">
+                <img src="images/js1.png" alt="">
+                <h3>Javascript Blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem totam magnam sapiente ad temporibus.</p>
+                <button onclick="jsblog()">Read More</button>
+            </div>
+
+            <div class="blog">
+                <img src="images/bt1.jpg" alt="">
+                <h3>Bootstrap Blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem totam magnam sapiente ad temporibus.</p>
+                <button onclick="btblog()">Read More</button>
+            </div>
+
+            <div class="blog">
+                <img src="images/react1.png" alt="">
+                <h3>React Blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem totam magnam sapiente ad temporibus.</p>
+                <button onclick="reactblog()">Read More</button>
+            </div>
+
+            <div class="blog">
+                <img src="images/java1.png" alt="">
+                <h3>Java Blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem totam magnam sapiente ad temporibus.</p>
+                <button onclick="javablog()">Read More</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <footer id="footer">
+
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy; Created by <span class="developer">Zaid Khan</span></p>
+        </div>
+
+
+    </footer>
+
+</body>
+<script src="index.js"></script>
+</html>
